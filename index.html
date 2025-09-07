@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas Eléctricas - CSS Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bicicletas Eléctricas</h1>
+        <p>Movilidad sostenible y eficiente para tu día a día</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="testimonios.html">Testimonios</a></li>
+            <li><a href="compra.html">Compra</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <aside>
+        <h2>Categorías</h2>
+        <ul>
+            <li><a href="#">Bicicletas Urbanas</a></li>
+            <li><a href="#">Bicicletas de Montaña</a></li>
+            <li><a href="#">Bicicletas Plegables</a></li>
+            <li><a href="#">Bicicletas de Carrera</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Repuestos</a></li>
+        </ul>
+        
+        <h2>Filtrar por</h2>
+        <ul>
+            <li><a href="#">Precio (Menor a Mayor)</a></li>
+            <li><a href="#">Autonomía de Batería</a></li>
+            <li><a href="#">Potencia del Motor</a></li>
+            <li><a href="#">Marcas</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <h2>Nuestros Modelos Destacados</h2>
+        
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23e8f5e9'/><path d='M80,100 C120,60 180,60 220,100' stroke='%232c974b' stroke-width='5' fill='none'/><circle cx='100' cy='120' r='20' fill='%23333'/><circle cx='200' cy='120' r='20' fill='%23333'/><rect x='130' y='70' width='40' height='30' rx='5' fill='%231e6de3'/></svg>" alt="Bicicleta Eléctrica Urbana">
+                <div class="producto-info">
+                    <h3>UrbanRide Pro</h3>
+                    <p>Bicicleta ideal para desplazamientos urbanos con comodidad y estilo.</p>
+                    <p>Autonomía: 60 km</p>
+                    <p class="precio">€1,299</p>
+                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23e3f2fd'/><path d='M70,110 C90,70 150,50 230,110' stroke='%231e6de3' stroke-width='5' fill='none'/><circle cx='100' cy='130' r='25' fill='%23333'/><circle cx='200' cy='130' r='25' fill='%23333'/><rect x='140' y='60' width='30' height='40' rx='5' fill='%232c974b'/></svg>" alt="Bicicleta Eléctrica de Montaña">
+                <div class="producto-info">
+                    <h3>MountainTrail X</h3>
+                    <p>Diseñada para los amantes del off-road con suspensión delantera.</p>
+                    <p>Autonomía: 45 km</p>
+                    <p class="precio">€1,599</p>
+                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23fff3e0'/><path d='M50,120 L250,120' stroke='%23ff9800' stroke-width='3'/><path d='M150,70 L150,120' stroke='%23ff9800' stroke-width='3'/><circle cx='100' cy='140' r='15' fill='%23333'/><circle cx='200' cy='140' r='15' fill='%23333'/><rect x='130' y='50' width='40' height='20' rx='3' fill='%231e6de3'/></svg>" alt="Bicicleta Eléctrica Plegable">
+                <div class="producto-info">
+                    <h3>FoldGo Lite</h3>
+                    <p>Bicicleta plegable perfecta para combinar con transporte público.</p>
+                    <p>Autonomía: 35 km</p>
+                    <p class="precio">€899</p>
+                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
+                </div>
+            </div>
+            
+            <div class="producto">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23f1f8e9'/><path d='M60,100 C100,70 200,70 240,100' stroke='%232c974b' stroke-width='4' fill='none'/><circle cx='100' cy='120' r='18' fill='%23333'/><circle cx='200' cy='120' r='18' fill='%23333'/><rect x='140' y='60' width='25' height='30' rx='3' fill='%231e6de3'/></svg>" alt="Bicicleta Eléctrica de Carrera">
+                <div class="producto-info">
+                    <h3>SpeedRace Pro</h3>
+                    <p>Alto rendimiento para ciclistas que buscan velocidad y eficiencia.</p>
+                    <p>Autonomía: 70 km</p>
+                    <p class="precio">€1,899</p>
+                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="https://wa.me/34123456789?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20sus%20bicicletas%20eléctricas." class="whatsapp-btn" target="_blank">
+            Consultar por WhatsApp
+        </a>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Bicicletas Eléctricas - Todos los derechos reservados</p>
+        <p>Dirección: Calle Verde 123, Ciudad Sostenible | Teléfono: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
