@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - electric-bike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Electric-Bike</h1>
+        <p>Transformando el futuro con tecnología sostenible</p>
+         </div>
+        <div class="header-logo">
+            <img src="img/electrickbike.png" alt="Logo de Electric-Bike" class="logo">
+        </div>
+    </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="testimonios.html">Testimonios</a></li>
+            <li><a href="compra.html">Comprar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <aside>
+        <h2>Proceso de Compra</h2>
+        <ol class="proceso-compra">
+            <li class="paso-activo">Selección de producto</li>
+            <li>Datos de envío</li>
+            <li>Método de pago</li>
+            <li>Confirmación</li>
+        </ol>
+        
+        <div class="resumen-compra">
+            <h3>Resumen de tu pedido</h3>
+            <p>Producto: Electric-Bike Premium</p>
+            <p>Precio: $2,299.00 USD</p>
+            <p>Envío: $50.00 USD</p>
+            <hr>
+            <p class="total">Total: $2,349.00 USD</p>
+        </div>
+    </aside>
+    
+    <main>
+        <h2>Completa tu compra</h2>
+        
+        <div class="producto-detalle">
+            <img src="img/mod.electricbke.jpg" alt="Electric-Bike Premium" class="producto-img">
+            <div class="producto-info">
+                <h3>Electric-Bike Premium</h3>
+                <p class="producto-descripcion">Bicileta Electrica completa con todas las funciones avanzadas, soporte prioritario y actualizaciones gratuitas por un año.</p>
+                <div class="producto-precio">$2,299.00 USD</div>
+            </div>
+        </div>
+        
+        <form class="formulario-compra">
+            <h3>Personaliza tu producto</h3>
+            
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="azul">Azul</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="verde">Verde</option>
+                    <option value="negro">Negro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="envio">Método de envío:</label>
+                <select id="envio" name="envio">
+                    <option value="estandar">Estándar (5-7 días) - $15.00</option>
+                    <option value="express">Express (2-3 días) - $25.00</option>
+                    <option value="urgente">Urgente (24 horas) - $50.00</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>Método de pago:</p>
+                <label>
+                    <input type="radio" name="pago" value="tarjeta" checked>
+                    Tarjeta de crédito/débito
+                </label>
+                <label>
+                    <input type="radio" name="pago" value="paypal">
+                    PayPal
+                </label>
+                <label>
+                    <input type="radio" name="pago" value="transferencia">
+                    Transferencia bancaria
+                </label>
+            </div>
+            
+            <a href="https://wa.me/51999999999?text=Hola,%20me%20interesa%20comprar%20Deepserk%20Premium%20en%20color%20azul%20con%20envío%20estándar%20y%20pago%20con%20tarjeta." 
+               target="_blank" class="btn-whatsapp">
+                Comprar por WhatsApp
+            </a>
+            
+            <button type="submit" class="btn-comprar">Completar compra</button>
+        </form>
+    </main>
+    
+    <footer id="contacto">
+       <p>&copy; 2025 Electric-Bike. Todos los derechos reservados.</p>
+        <p>Contacto: info@electricbike.com | Tel: +511 01-4114567</p>
+        <div class="social-links">
+            <<a href="#">Facebook</a>
+            <a href="#">Twitter</a> 
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>  
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>  
+        </div>
+    </footer>
+    
+    <script>
+        // Script para actualizar el mensaje de WhatsApp según las selecciones del usuario
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorSelect = document.getElementById('color');
+            const envioSelect = document.getElementById('envio');
+            const pagoRadios = document.querySelectorAll('input[name="pago"]');
+            const whatsappBtn = document.querySelector('.btn-whatsapp');
+            
+            function actualizarEnlaceWhatsApp() {
+                let color = colorSelect.value;
+                let envioTexto = envioSelect.options[envioSelect.selectedIndex].text;
+                let pago = Array.from(pagoRadios).find(radio => radio.checked).value;
+                
+                let mensaje = `Hola,%20me%20interesa%20comprar%20Deepserk%20Premium%20en%20color%20${color}%20con%20${encodeURIComponent(envioTexto)}%20y%20pago%20con%20${pago}.`;
+                
+                whatsappBtn.href = `https://wa.me/51999999999?text=${mensaje}`;
+            }
+            
+            colorSelect.addEventListener('change', actualizarEnlaceWhatsApp);
+            envioSelect.addEventListener('change', actualizarEnlaceWhatsApp);
+            pagoRadios.forEach(radio => {
+                radio.addEventListener('change', actualizarEnlaceWhatsApp);
+            });
+            
+            // Inicializar el enlace
+            actualizarEnlaceWhatsApp();
+        });
+    </script>
+</body>
+</html>

@@ -3,101 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicicletas Eléctricas - CSS Grid Layout</title>
+    <title>electric-bike - Inicio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bicicletas Eléctricas</h1>
-        <p>Movilidad sostenible y eficiente para tu día a día</p>
+        <h1>Electric-Bike</h1>
+        <p>Transformando el futuro con tecnología sostenible</p>
+          </div>
+        <div class="header-logo">
+            <img src="img/electrickbike.png" alt="Logo de Electric-Bike" class="logo">
+        </div>
+    </div>
     </header>
     
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="testimonios.html">Testimonios</a></li>
-            <li><a href="compra.html">Compra</a></li>
+            <li><a href="compra.html">Comprar</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     
     <aside>
-        <h2>Categorías</h2>
-        <ul>
-            <li><a href="#">Bicicletas Urbanas</a></li>
-            <li><a href="#">Bicicletas de Montaña</a></li>
-            <li><a href="#">Bicicletas Plegables</a></li>
-            <li><a href="#">Bicicletas de Carrera</a></li>
-            <li><a href="#">Accesorios</a></li>
-            <li><a href="#">Repuestos</a></li>
-        </ul>
-        
-        <h2>Filtrar por</h2>
-        <ul>
-            <li><a href="#">Precio (Menor a Mayor)</a></li>
-            <li><a href="#">Autonomía de Batería</a></li>
-            <li><a href="#">Potencia del Motor</a></li>
-            <li><a href="#">Marcas</a></li>
-        </ul>
+        <h2>Novedades</h2>
+        <div class="novedad">
+            <h3>Lanzamientos</h3>
+            <p>Nueva actualización del portafolio revolucionado.</p>
+        </div>
+        <div class="novedad">
+            <h3>Testdrive gratuito</h3>
+            <p>Aprende a sacarle el máximo provecho al trafico.</p>
+        </div>
     </aside>
     
     <main>
-        <h2>Nuestros Modelos Destacados</h2>
+        <section class="hero">
+            <h2>Potencia tu vida con nuestros modelos</h2>
+            <p>Electric-Bike es la solución todo en uno que estabas esperando para llevar tu vida al siguiente nivel.</p>
+            <a href="compra.html" class="cta-button">Comenzar ahora</a>
+        </section>
         
-        <div class="productos-grid">
-            <div class="producto">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23e8f5e9'/><path d='M80,100 C120,60 180,60 220,100' stroke='%232c974b' stroke-width='5' fill='none'/><circle cx='100' cy='120' r='20' fill='%23333'/><circle cx='200' cy='120' r='20' fill='%23333'/><rect x='130' y='70' width='40' height='30' rx='5' fill='%231e6de3'/></svg>" alt="Bicicleta Eléctrica Urbana">
-                <div class="producto-info">
-                    <h3>UrbanRide Pro</h3>
-                    <p>Bicicleta ideal para desplazamientos urbanos con comodidad y estilo.</p>
-                    <p>Autonomía: 60 km</p>
-                    <p class="precio">€1,299</p>
-                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
+        <section class="features">
+            <h2>Características principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Velocidad Inteligente</h3>
+                    <p>Automatiza tus viajes más complejos con nuestra tecnología de vanguardia.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Análisis de rutas diarias</h3>
+                    <p>Anticipa tendencias y comportamientos con precisión asombrosa.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Interfaz Intuitiva</h3>
+                    <p>Diseñado para ciclistas exigentes a nivel nacional.</p>
                 </div>
             </div>
-            
-            <div class="producto">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23e3f2fd'/><path d='M70,110 C90,70 150,50 230,110' stroke='%231e6de3' stroke-width='5' fill='none'/><circle cx='100' cy='130' r='25' fill='%23333'/><circle cx='200' cy='130' r='25' fill='%23333'/><rect x='140' y='60' width='30' height='40' rx='5' fill='%232c974b'/></svg>" alt="Bicicleta Eléctrica de Montaña">
-                <div class="producto-info">
-                    <h3>MountainTrail X</h3>
-                    <p>Diseñada para los amantes del off-road con suspensión delantera.</p>
-                    <p>Autonomía: 45 km</p>
-                    <p class="precio">€1,599</p>
-                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
-                </div>
-            </div>
-            
-            <div class="producto">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23fff3e0'/><path d='M50,120 L250,120' stroke='%23ff9800' stroke-width='3'/><path d='M150,70 L150,120' stroke='%23ff9800' stroke-width='3'/><circle cx='100' cy='140' r='15' fill='%23333'/><circle cx='200' cy='140' r='15' fill='%23333'/><rect x='130' y='50' width='40' height='20' rx='3' fill='%231e6de3'/></svg>" alt="Bicicleta Eléctrica Plegable">
-                <div class="producto-info">
-                    <h3>FoldGo Lite</h3>
-                    <p>Bicicleta plegable perfecta para combinar con transporte público.</p>
-                    <p>Autonomía: 35 km</p>
-                    <p class="precio">€899</p>
-                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
-                </div>
-            </div>
-            
-            <div class="producto">
-                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'><rect width='300' height='180' fill='%23f1f8e9'/><path d='M60,100 C100,70 200,70 240,100' stroke='%232c974b' stroke-width='4' fill='none'/><circle cx='100' cy='120' r='18' fill='%23333'/><circle cx='200' cy='120' r='18' fill='%23333'/><rect x='140' y='60' width='25' height='30' rx='3' fill='%231e6de3'/></svg>" alt="Bicicleta Eléctrica de Carrera">
-                <div class="producto-info">
-                    <h3>SpeedRace Pro</h3>
-                    <p>Alto rendimiento para ciclistas que buscan velocidad y eficiencia.</p>
-                    <p>Autonomía: 70 km</p>
-                    <p class="precio">€1,899</p>
-                    <a href="compra.html" class="btn-comprar">Ver detalles</a>
-                </div>
-            </div>
-        </div>
+        </section>
         
-        <a href="https://wa.me/34123456789?text=Hola,%20me%20interesa%20obtener%20más%20información%20sobre%20sus%20bicicletas%20eléctricas." class="whatsapp-btn" target="_blank">
-            Consultar por WhatsApp
-        </a>
+        <section class="testimonios-preview">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <img src="img/Maria_G.jpeg"Cliente 1" class="testimonio-img">
+                    <h3>María González</h3>
+                    <p class="testimonio-empresa">Estudio de Abogados Solaeche</p>
+                    <p class="testimonio-texto">"Electric-bike ha transformado por completo nuestra forma de viajar."</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+                
+                <div class="testimonio-card">
+                    <img src="img/Carlos_S.jpg" alt="Cliente 2" class="testimonio-img">
+                    <h3>Carlos Rodríguez</h3>
+                    <p class="testimonio-empresa">Hospital de Luz del Norte</p>
+                    <p class="testimonio-texto">"La implementación fue sencilla y el soporte técnico excepcional."</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+            <a href="testimonios.html" class="ver-mas">Ver más testimonios</a>
+        </section>
     </main>
     
-    <footer>
-        <p>&copy; 2023 Bicicletas Eléctricas - Todos los derechos reservados</p>
-        <p>Dirección: Calle Verde 123, Ciudad Sostenible | Teléfono: (123) 456-7890</p>
+    <footer id="contacto">
+        <p>&copy; 2025 Electric-Bike. Todos los derechos reservados.</p>
+        <p>Contacto: info@electricbike.com | Tel: +511 01-4114567</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a> 
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>  
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>      
+        </div>
     </footer>
 </body>
 </html>
